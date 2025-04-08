@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina WEB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="logo1.jpg" width="100" height="150"></a>
+        <h1>LUMINARIA</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="Index.html">INICIO</a></li>
+                <li><a href="quienessomos.html">Quiénes Somos</a></li>
+                <li><a href="productos.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección de contenido principal-->
+    <main>
+        <!-- Sección de la empresa -->
+        <section id="empresa" class="columnas">
+            <div class="izquierda">
+                <img src="logo1.jpg" width="250" height="250" alt="quienes_somos">
+            </div>
+            <div class="derecha">
+                <h2>Mi empresa</h2>
+                <p>Nuestra misión es brindarte un servicio y productos personalizados de buena calidad y muy bonitos.</p>    
+            </div>
+        </section>
+
+        <!-- Sección de Promociones -->
+        <section id="promocion">
+            <h2>EDICIONES ESPECIALES</h2>
+            <div class="catalogo">
+                <!-- EDICION 1 -->
+                <div class="VELA DE ADVIENTO">
+                    <img src="velaadviento1.jpg" width="250" height="250" alt="Producto 1">
+                    <div class="producto-info">
+                        <h2>Edicion Especial 1</h2>
+                        <p>Velas Adviento 23cm X 2.2cm 1 Paquete 4 Piezas.</p>
+                    </div>
+                </div>
+                <!-- promocion 2 -->
+                <div class="Vela de 7 chakras">
+                    <img src="chakras1.jpg" width="250" height="250" alt="Producto 2">
+                    <div class="producto-info">
+                        <h2>Edicion Especial 2</h2>
+                        <p>7 velas coloridas de meditación de chakras, vela espiritual para meditación y curación, arco iris, 7 onzas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Servicios y Precios -->
+        <section id="servicios" class="columnas">
+            <div class="izquierda">
+                <h2>Servicios y Precios</h2>
+                <ul>
+                    <li>Vela lavanda: $100.00</li>
+                    <li>Vela vainilla: $150.00</li>
+                    <li>Vela Frutos Rojos: $100.00</li>
+                    <li>Vela de Canela: $120.00</li>
+                    <li>Vela de Jazmin: $100.00</li>
+                    <li>Vela Azahar: $150.00</li>
+                    <li>Vela Mango: $100.00</li>
+                    <!-- Agregar más servicios según sea necesario -->
+                </ul>
+            </div>
+            <div class="derecha">
+                <img src="servicio1.jpg" width="200" height="200"alt="Servicio">
+            </div>
+        </section>
+
+        <!-- Sección de Marcas -->
+        <section id="marcas">
+            <h2>Nuestras Marcas</h2>
+            <div class="brands">
+                 <img src="lavanda1.jpg" width="150" height="200" alt="Marca 1">
+                <img src="vainilla1.jpg" width="150" height="200" alt="Marca 2">
+                <img src="rojos1.jpg" width="150" height="200" alt="Marca 3">
+                <img src="canela1.jpg" width="150" height="200" alt="Marca 4">
+                <img src="jazmin1.jpg" width="150" height="200" alt="Marca 5">
+                <img src="azahar1.jpg" width="150" height="200" alt="Marca 6">
+                <img src="mango1.jpg" width="150" height="200" alt="Marca 7">
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2024 Mi empresa. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#" target="Luminaria">Facebook</a> |
+            <a href="#" target="Luminariadluxe">Twitter</a> |
+            <a href="#" target="Luminariadluxe">Instagram</a>
+        </div>
+        <p>Contacto: info@luminariadluxe.com</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+      </script>
+</body>
+</html>

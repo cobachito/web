@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Catálogo de Productos</title>
+
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="logo1.jpg" width="100" height="150" ></a>
+        <h1>Mi empresa</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="Index.html">INICIO</a></li>
+                <li><a href="quienessomos.html">Quiénes Somos</a></li>
+                <li><a href="productos.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de contenido principal-->
+    <main>
+        <h1>Catálogo de Productos</h1>
+        <div class="catalogo">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="lavanda1.jpg" width="250" height="250" alt="Producto 1">
+                <div class="producto-info">
+                    <h2>Vela de Lavanda</h2>
+                    <p>Vela Aromática Lavanda con Cuarzo 12 oz</p>
+                    <p class="precio">$200.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="vainilla1.jpg" width="250" height="250" alt="Producto 2">
+                <div class="producto-info">
+                    <h2>Vela de Vainilla</h2>
+                    <p>Vela de vainilla aromatizada para magdalenas, vaso pequeño de 4.5 onzas, con una sola mecha.</p>
+                    <p class="precio">$120.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="rojos1.jpg" width="250" height="250" alt="Producto 3">
+                <div class="producto-info">
+                    <h2>Vela de Frutos Rojos</h2>
+                    <p>Vela Aromática de Cera de Soya (Frutos Rojos, 8 onzas).</p>
+                    <p class="precio">$150.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="producto">
+                <img src="canela1.jpg" width="250" height="250" alt="Producto 4">
+                <div class="producto-info">
+                    <h2>Vela de Canela</h2>
+                    <p>Vela Aromática Canela En Vaso De Barro.</p>
+                    <p class="precio">$150.00</p>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="producto">
+                <img src="jazmin1.jpg" width="250" height="250" alt="Producto 5">
+                <div class="producto-info">
+                    <h2>Vela de Jazmin</h2>
+                    <p>Vela en Tarro con Relieve -Aroma a Dulce Jazmín.</p>
+                    <p class="precio">$100.00</p>
+                </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="producto">
+                <img src="azahar1.jpg" width="250" height="250" alt="Producto 6">
+                <div class="producto-info">
+                    <h2>Vela de Azahar</h2>
+                    <p>Vela Aromatizante Andalucia Azahar 250 Grs.</p>
+                    <p class="precio">$150.00</p>
+                </div>
+            </div>
+            <!-- Producto 7 -->
+            <div class="producto">
+                <img src="mango1.jpg"  width="250" height="250" alt="Producto 7">
+                <div class="producto-info">
+                    <h2>Vela de Mango</h2>
+                    <p>Vela Aromática Esencia de Mango 600 g.</p>
+                    <p class="precio">$150.00</p>
+                </div>
+            </div>
+         
+    </main>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2024 Mi empresa. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#" target="Luminaria">Facebook</a> |
+            <a href="#" target="Luminariadluxe">Twitter</a> |
+            <a href="#" target="Luminariadluxe">Instagram</a>
+        </div>
+        <p>Contacto: info@luminariadluxe.com</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>
